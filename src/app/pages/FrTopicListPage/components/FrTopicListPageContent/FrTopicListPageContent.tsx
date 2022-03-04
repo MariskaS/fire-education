@@ -4,7 +4,6 @@ import {TopicListItem} from '../../../../shared/core/interfaces';
 import {HEADING_TYPE, TITLE} from '../../../../shared/core/constant';
 import {UiHeading} from '../../../../shared/components/UiHeading/UiHeading';
 import {FrTopicList} from './components/FrTopicList/FrTopicList';
-import {setCurrent} from "../../../../data-flow/topic/topicSlice";
 import {useAppDispatch} from '../../../../hooks';
 import {useNavigate} from "react-router";
 
@@ -17,8 +16,7 @@ export const FrTopicListPageContent: React.FC<FrTopicListPageContentProps> = ({t
   const navigate = useNavigate();
 
   const callback = useCallback((topic) => {
-    dispatch(setCurrent(topic));
-    navigate(`topic:${topic.id}`);
+    navigate(topic.id);
   }, [dispatch, navigate]);
 
   return (

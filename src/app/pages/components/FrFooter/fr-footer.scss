@@ -1,5 +1,5 @@
 [class*='fr-footer'] {
-  margin-top: var(--ui-space-base);
+  margin-top: 6rem;
   text-align: right;
   line-height: 1.2;
   font-size: var(--ui-font-size-xs);
@@ -13,4 +13,5 @@
 .fr-footer--main {
   text-align: center;
   color: var(--ui-body-color);
+  margin-top: var(--ui-space-base);
 }

@@ -1,0 +1,10 @@
+@import 'src/app/styles/mixins/mixin-link';
+
+.ui-breadcrumbs {
+  margin: calc(var(--ui-space-small)*-1);
+
+  &__item {
+    padding: var(--ui-space-small);
+    @include link;
+  }
+}

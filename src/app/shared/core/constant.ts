@@ -30,6 +30,7 @@ export const BUTTON_TEXT = {
   letsGo: 'Let\'s Go',
   volunteer: 'Volunteer',
   tryAgain: 'try again',
+  topics: 'Topics',
 }
 
 export const BUTTON_LINK = {
@@ -58,6 +59,11 @@ export const HOME = {
       },
     ]
   },
+}
+
+export const ERROR = {
+  oops: 'Ooops...',
+  somethingWentWrong: 'Something went wrong',
 }
 
 export const THEME = {

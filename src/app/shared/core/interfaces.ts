@@ -24,3 +24,8 @@ export interface TopicListItem {
   keys: string[],
   questions?: QuizListItem[],
 }
+
+export interface LinkListItem {
+  text: string,
+  link: string,
+}

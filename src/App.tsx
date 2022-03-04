@@ -8,7 +8,6 @@ import {FrTopicDetailPage} from "./app/pages/FrTopicDetailPage/FrTopicDetailPage
 import {useAppDispatch} from "./app/hooks";
 import {loadTopicListAsync} from "./app/data-flow/topic/topicSlice";
 import {FrHeader} from "./app/pages/components/FrHeader/FrHeader";
-import {FrFooter} from "./app/pages/components/FrFooter/FrFooter";
 
 function App() {
   const dispatch = useAppDispatch();
