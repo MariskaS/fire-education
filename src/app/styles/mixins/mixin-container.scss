@@ -1,0 +1,8 @@
+$page-width: 1680px;
+
+@mixin container {
+  max-width: $page-width;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}

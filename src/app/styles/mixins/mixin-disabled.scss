@@ -1,0 +1,11 @@
+@mixin disabled-visually {
+  opacity: .4;
+  cursor: default;
+  user-select: none;
+}
+
+@mixin disabled {
+  @include disabled-visually();
+
+  pointer-events: none;
+}

@@ -1,0 +1,47 @@
+@mixin input-variant(
+  $type,
+  $height,
+  $width,
+  $color,
+  $border,
+  $background,
+  $border-action,
+  $padding
+) {
+  height: $height;
+  width: 100%;
+  color: currentColor;
+  background-color: $background;
+  font-family: var(--ui-font-family-poppins-regular);
+  border: $border;
+
+  &:focus,
+  &:active,
+  &:hover {
+    border-color: $border-action;
+    position: relative;
+    z-index: var(--ui-z-index-focus);
+  }
+
+  @if $type == 'input' {
+    input {
+      width: 100%;
+      height: 100%;
+      padding: $padding;
+      border: none;
+      background-color: transparent;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: var(--ui-font-size-base);
+      color: $color;
+      outline: none;
+    }
+  } @else if $type == 'textarea' {
+    min-height: $height;
+    resize: vertical;
+    padding: $padding;
+    font-size: var(--ui-font-size-base);
+    outline: none;
+    max-height: 300px;
+  }
+}

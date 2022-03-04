@@ -1,0 +1,7 @@
+:root {
+  --ui-z-index-focus: 2;
+  --ui-z-index-backdrop: 4;
+  --ui-z-index-panel: calc(var(--ui-z-index-backdrop) + 1);
+  --ui-z-index-menu: var(--ui-z-index-panel);
+  --ui-z-index-modal: calc(var(--ui-z-index-backdrop) + 1);
+}

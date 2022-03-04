@@ -1,0 +1,32 @@
+@import '../../../styles/mixins/mixin-container';
+$logo-size: 68px;
+
+.fr-header {
+  display: flex;
+  align-items: center;
+  padding: var(--ui-space-base);
+  background-color: var(--ui-head-bg);
+  @include container();
+  justify-content: space-between;
+
+  &__logo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: var(--ui-color-white);
+
+    img {
+      display: block;
+      height: $logo-size;
+      width: $logo-size;
+      background: var(--ui-color-white);
+      border-radius: 50%;
+      padding: var(--ui-space-base-half);
+    }
+
+    span {
+      margin-left: var(--ui-space-base);
+      font-family: var(--ui-font-family-poppins-semi-bold);
+    }
+  }
+}

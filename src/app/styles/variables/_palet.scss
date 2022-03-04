@@ -1,0 +1,39 @@
+[data-theme='dark'],
+[data-theme='light'] {
+  --ui-color-white: #fff;
+  --ui-color-black: #000000;
+}
+
+[data-theme='dark'] {
+  --ui-color-primary:  #9f8524;
+  --ui-color-primary-dark:  #7e691e;
+  --ui-color-primary-darker:  #2e270b;
+
+  --ui-color-accent:  #cc0000;
+  --ui-color-accent-dark:  #9d0000;
+
+  --ui-color-grey-light: #dedede;
+  --ui-color-grey: #8d8b8b;
+  --ui-color-grey-dark: #292929;
+  --ui-color-grey-darker: #121212;
+
+  /*
+  * Body.
+  */
+  --ui-main-bg: var(--ui-color-grey-dark);
+  --ui-body-bg: var(--ui-color-grey-darker);
+  --ui-body-color: var(--ui-color-grey-light);
+  --ui-head-bg: var(--ui-color-black);
+  --ui-footer-bg: var(--ui-color-black);
+  --ui-footer-color: var(--ui-color-grey);
+
+  /*
+  * Control.
+  */
+  --ui-border: 1px solid rgb(255 255 255 / 16%);
+  --ui-border-double: 2px solid rgb(255 255 255 / 16%);
+  --ui-input-bg: var(--ui-color-black);
+}
+
+[data-theme='light'] {
+}

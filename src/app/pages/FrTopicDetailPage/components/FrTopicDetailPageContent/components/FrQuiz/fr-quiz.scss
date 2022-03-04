@@ -1,0 +1,43 @@
+.fr-quiz {
+  margin-top: calc(Var(--ui-space-base)*3);
+
+  &-variants {
+    &__title {
+      margin-bottom: var(--ui-space-base);
+    }
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: calc(var(--ui-space-base-half) * -1);
+
+      &-item {
+        padding: var(--ui-space-base-half);
+      }
+    }
+  }
+
+  &-answers {
+    &__title {
+      font-size: var(--ui-font-size-base);
+      margin-bottom: var(--ui-space-base);
+    }
+
+    &__list {
+      &-item {
+        padding-bottom: var(--ui-space-base);
+        margin: var(--ui-space-base) 0;
+
+
+        &:not(:last-child) {
+          border-bottom: 1px solid var(--ui-main-bg);
+        }
+      }
+
+      h4 {
+        font-family: var(--ui-font-family-poppins-semi-bold);
+        margin-bottom: var(--ui-space-base);
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import "../../../styles/mixins/mixin-heading";
+
+.ui-heading {
+  padding-bottom: var(--ui-space-base);
+
+  &--title {
+    @include heading('h1')
+  }
+  &--subtitle {
+    @include heading('h3')
+  }
+}

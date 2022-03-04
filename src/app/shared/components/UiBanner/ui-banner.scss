@@ -1,0 +1,24 @@
+@import "../../../styles/variables/screen";
+
+$img-width: 600px;
+
+.ui-banner {
+  margin: calc(var(--ui-space-base)*-1);
+
+  &__img,
+  &__info {
+    padding: var(--ui-space-base);
+  }
+
+  // For Tablet & Desktop.
+  @media (min-width: $screen-lg) {
+    & {
+      display: flex;
+      align-items: center;
+
+      &__img {
+        max-width: $img-width;
+      }
+    }
+  }
+}

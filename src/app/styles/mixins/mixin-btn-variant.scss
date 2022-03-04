@@ -1,0 +1,41 @@
+@mixin btn-variant(
+    $background-color,
+    $color,
+    $border,
+    $border-action,
+    $color-action,
+    $bg-action,
+    $height,
+    $width,
+    $spaces) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: $color !important;
+  background-color: $background-color;
+  position: relative;
+  border: $border;
+  height: $height;
+  width: $width;
+  padding: $spaces;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+  font-family: var(--ui-font-family-impact);
+  font-size: var(--ui-font-size-base);
+  user-select: none;
+  letter-spacing: 1.5px;
+
+  &:hover,
+  &.is-active {
+    border-color: $border-action;
+    background-color: $bg-action;
+    color: $color-action !important;
+  }
+
+  &:focus {
+    outline: unset;
+  }
+}

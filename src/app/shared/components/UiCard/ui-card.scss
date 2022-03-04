@@ -1,0 +1,14 @@
+$img-size: 250px;
+
+.ui-card {
+  &__img {
+    margin: 0 0 var(--ui-space-base);
+    overflow: hidden;
+    height: $img-size;
+    background: no-repeat center;
+    background-size: cover;
+  }
+
+  &__content {
+  }
+}

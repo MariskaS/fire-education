@@ -1,0 +1,48 @@
+@import '../../../styles/mixins/mixin-btn-variant';
+
+$promo-width: 160px;
+
+.ui-button {
+  &--promo-accent {
+    @include btn-variant(
+                    var(--ui-color-accent),
+                    var(--ui-color-white),
+                    0,
+                    unset,
+                    var(--ui-color-white),
+                    var(--ui-color-accent-dark),
+                    var(--ui-control-size-promo),
+                    $promo-width,
+                    var(--ui-space-base-half) var(--ui-space-base),
+    );
+    font-size: var(--ui-font-size-md);
+  }
+
+  &--promo-primary {
+    @include btn-variant(
+                    transparent,
+                    var(--ui-color-primary),
+                    2px solid var(--ui-color-primary),
+                    var(--ui-color-primary-dark),
+                    var(--ui-color-primary-darker),
+                    var(--ui-color-primary-dark),
+                    var(--ui-control-size),
+                    auto,
+                    var(--ui-space-base-half) var(--ui-space-base),
+    );
+  }
+
+  &--accent {
+    @include btn-variant(
+                    var(--ui-color-accent),
+                    var(--ui-color-white),
+                    0,
+                    unset,
+                    var(--ui-color-white),
+                    var(--ui-color-accent),
+                    var(--ui-control-size),
+                    auto,
+                    var(--ui-space-base-half) var(--ui-space-base),
+    );
+  }
+}

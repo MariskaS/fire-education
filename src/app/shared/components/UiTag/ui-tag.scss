@@ -1,0 +1,20 @@
+.ui-tag {
+  font-size: var(--ui-font-size-xs);
+  color: var(--ui-color-primary);
+  border: 2px solid var(--ui-color-primary);
+  padding: var(--ui-space-small) var(--ui-space-base);
+  cursor: pointer;
+  min-height: var(--ui-control-size-sm);
+  border-radius: calc(var(--ui-control-size-sm)/2);
+  line-height: 1.1;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+
+  &.is-active,
+  &:hover {
+    color: var(--ui-color-primary-darker);
+    background-color: var(--ui-color-primary-dark);
+    border-color: var(--ui-color-primary-dark);
+  }
+}

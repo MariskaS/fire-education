@@ -1,0 +1,23 @@
+@import "src/app/styles/variables/screen";
+
+@mixin heading($type) {
+  text-transform: capitalize;
+  line-height: 1.2;
+  color: var(--ui-color-white);
+
+
+  @if $type == 'h1' {
+    font-size: calc(var(--ui-font-size-h1) - 20px);
+    font-family: var(--ui-font-family-impact);
+    letter-spacing: 2.5px;
+
+    // For Desktop.
+    @media (min-width: $screen-xs) {
+      font-size: var(--ui-font-size-h1);
+    }
+  }
+  @if $type == 'h3' {
+    font-family: var(--ui-font-family-poppins-semi-bold);
+    font-size: var(--ui-font-size-h3);
+  }
+}

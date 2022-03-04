@@ -1,0 +1,16 @@
+[class*='fr-footer'] {
+  margin-top: var(--ui-space-base);
+  text-align: right;
+  line-height: 1.2;
+  font-size: var(--ui-font-size-xs);
+  color: var(--ui-color-grey);
+
+  p {
+    padding-bottom: var(--ui-space-base-half);
+  }
+}
+
+.fr-footer--main {
+  text-align: center;
+  color: var(--ui-body-color);
+}

@@ -1,0 +1,75 @@
+@import 'src/app/styles/variables/screen';
+@import 'src/app/styles/mixins/mixin-container';
+
+$scrollbar-size: 4px;
+$video-width: 400px;
+
+
+::selection {
+  background: var(--ui-color-primary-dark);
+  color: var(--ui-color-white);
+}
+
+::-webkit-scrollbar {
+  width: $scrollbar-size;
+  height: $scrollbar-size;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ui-color-primary-dark);
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: var(--ui-font-family-poppins-regular);
+  font-size: var(--ui-font-size-base);
+}
+
+#root {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.fr-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0;
+  font-family: var(--ui-font-family-poppins-regular);
+  font-size: var(--ui-font-size-base);
+  line-height: 1.1;
+  background-color: var(--ui-main-bg);
+  color: var(--ui-body-color);
+
+  &__body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    overflow-y: auto;
+    @include container();
+    line-height: 1.5;
+    color: var(--ui-body-color);
+    background-color: var(--ui-body-bg);
+    padding: var(--ui-space-base);
+
+    // For Tablet & Desktop.
+    @media (min-width: $screen-md) {
+      padding: var(--ui-space-base-double);
+    }
+  }
+}
+
+p {
+  &:not(:last-child) {
+    padding-bottom: var(--ui-space-base);
+  }
+}
