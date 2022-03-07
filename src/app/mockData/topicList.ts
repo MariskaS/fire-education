@@ -19,7 +19,7 @@ export const TOPIC_LIST = [
         link: 'https://www.zoo.com/quiz/could-you-pass-a-firefighter-entrance-exam'
       }
     ],
-    questions: [
+    quiz: [
       {
         question: 'Which of these qualifies as a first responder?',
         answer: `Civilians are often first responders - people who provide
@@ -63,12 +63,48 @@ export const TOPIC_LIST = [
   {
     id: '2',
     img: stub,
+    name: 'Flashcards: Loss control',
+    description: `Test your knowledge of sounding and walking on the roof,
+    using roof ladders, working from an aerial, and cutting the hole
+    and punching through`,
+    date: '2022-02-21T22:45:34.124Z',
+    type: 'flashcards',
+    keys: ['loss control', 'flashcards'],
+    resources: [
+      {
+        name: 'Essentials of Fire Fighting. Ch. 18 - FF I - Loss Control',
+        link: 'https://www.amazon.com/Essentials-Fire-Fighting-Department-Operations/dp/0133140806/ref=sr_1_2?crid=QX9BOUWPUAG7&keywords=essentials+of+firefighting&qid=1646429625&sprefix=essentials+of+fire+fighting%2Caps%2C104&sr=8-2'
+      }
+    ],
+    questions: [
+      {
+        question: 'Lffbfgnbgn ghmhmhjm,jh voluptates?',
+        answer: 'Lffbfgnbgn ghmhmhjm,jh voluptates?'
+      },
+      {
+        question: 'Lffbfgnbgn ghmhmhjm,jh voluptates?',
+        answer: 'Lffbfgnbgn ghmhmhjm,jh voluptates?'
+      },
+      {
+        question: 'Lffbfgnbgn ghmhmhjm,jh voluptates?',
+        answer: 'Lffbfgnbgn ghmhmhjm,jh voluptates?'
+      },
+      {
+        question: 'Lffbfgnbgn ghmhmhjm,jh voluptates?',
+        answer: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo quibusdam quo saepe sint vero. Adipisci distinctio dolorem expedita illo illum in l
+            audantium nisi praesentium quo repellendus`
+      },
+    ]
+  },
+  {
+    id: '3',
+    img: stub,
     name: 'How much do you know about vertical ventilation?',
     description: `Test your knowledge of sounding and walking on the roof,
     using roof ladders, working from an aerial, and cutting the hole
     and punching through`,
     date: '2022-02-21T22:45:34.124Z',
-    type: 'quiz',
+    type: 'topic',
     keys: ['vertical ventilation', 'quiz'],
     resources: [
       {
@@ -76,15 +112,14 @@ export const TOPIC_LIST = [
         link: 'https://www.firerescue1.com/firefighter-safety/articles/quiz-how-much-do-you-know-about-vertical-ventilation-PRl0bUFhhk5aS8GN/'
       }
     ],
-    questions: [],
   },
   {
-    id: '3',
+    id: '4',
     img: stub,
     name: 'Test your knowledge of building construction',
     description: 'A firefighter’s guide to building loads, forces and hazards',
     date: '2022-02-21T22:45:34.124Z',
-    type: 'quiz',
+    type: 'topic',
     keys: ['building construction', 'quiz'],
     resources: [
       {
@@ -92,15 +127,15 @@ export const TOPIC_LIST = [
         link: 'https://www.zoo.com/quiz/could-you-pass-a-firefighter-entrance-exam'
       }
     ],
-    questions: [],
+    quiz: [],
   },
   {
-    id: '4',
+    id: '5',
     img: stub,
     name: 'How well do you know SCBA?',
     description: 'Test your knowledge on SCBA standards, equations and more',
     date: '2022-02-21T22:45:34.124Z',
-    type: 'quiz',
+    type: 'topic',
     keys: ['SCBA', 'quiz'],
     resources: [
       {
@@ -108,6 +143,6 @@ export const TOPIC_LIST = [
         link: 'https://www.zoo.com/quiz/could-you-pass-a-firefighter-entrance-exam'
       }
     ],
-    questions: [],
+    quiz: [],
   }
 ]

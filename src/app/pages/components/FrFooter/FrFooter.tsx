@@ -18,6 +18,8 @@ export const FrFooter: React.FC<UiFooterProps> = ({main = false}) => {
                                                                    link={COMPANY_INFO.link}/>
       </p>
       <p>{COMPANY_INFO.address}</p>
+      <p><UiLink text={COMPANY_INFO.poweredBy.text}
+                 link={COMPANY_INFO.poweredBy.link}/></p>
       <p><UiLink text={COMPANY_INFO.email} link={`mailto:${COMPANY_INFO.email}`}/></p>
     </footer>
   );

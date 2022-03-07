@@ -1,7 +1,7 @@
 @import 'src/app/styles/mixins/mixin-link';
 
 .ui-breadcrumbs {
-  margin: calc(var(--ui-space-small)*-1);
+  margin: calc(var(--ui-space-small)*-1) calc(var(--ui-space-small)*-1) var(--ui-space-base);
 
   &__item {
     padding: var(--ui-space-small);

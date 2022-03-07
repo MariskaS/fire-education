@@ -9,10 +9,10 @@ import {UiButton} from "../../../../../../shared/components/UiButton/UiButton";
 import {UiTextHighlight} from "../../../../../../shared/components/UiTextHighlight/UiTextHighlight";
 
 export interface FrQuizProps {
-  questions: QuizListItem[],
+  quiz: QuizListItem[],
 }
 
-export const FrQuiz: React.FC<FrQuizProps> = ({questions}) => {
+export const FrQuiz: React.FC<FrQuizProps> = ({quiz}) => {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [showScore, setShowScore] = useState(false)
   const [score, setScore] = useState(0)
@@ -22,14 +22,14 @@ export const FrQuiz: React.FC<FrQuizProps> = ({questions}) => {
     }
 
     const nextQuestions = currentQuestion + 1;
-    if (nextQuestions < questions.length) {
+    if (nextQuestions < quiz.length) {
       setCurrentQuestion(nextQuestions);
     } else {
       setShowScore(true)
     }
   }
 
-  const answerListTmp = questions.map((value, index) => (
+  const answerListTmp = quiz.map((value, index) => (
     <div className="fr-quiz-answers__list-item"
          key={index}>
       <h4>{value.question}</h4>
@@ -37,7 +37,7 @@ export const FrQuiz: React.FC<FrQuizProps> = ({questions}) => {
     </div>
   ))
 
-  const variantListTmp = questions[currentQuestion].variants.map((variant, index) => (
+  const variantListTmp = quiz[currentQuestion].variants.map((variant, index) => (
     <div className="fr-quiz-variants__list-item"
          key={index}>
       <UiTag tag={variant}
@@ -56,7 +56,7 @@ export const FrQuiz: React.FC<FrQuizProps> = ({questions}) => {
       {showScore ? (
           <div className="fr-quiz-answers">
             <UiTextHighlight>
-              <h3 className="fr-quiz-answers__title">You scored <strong>{score}</strong> out of <strong>{questions.length}</strong></h3>
+              <h3 className="fr-quiz-answers__title">You scored <strong>{score}</strong> out of <strong>{quiz.length}</strong></h3>
             </UiTextHighlight>
             <UiHeading type={HEADING_TYPE.subtitle}>{TITLE.answers}</UiHeading>
             <div className="fr-quiz-answers__list">
@@ -71,9 +71,9 @@ export const FrQuiz: React.FC<FrQuizProps> = ({questions}) => {
         (
           <div className="fr-quiz-variants">
             <UiHeading type={HEADING_TYPE.subtitle}>
-              <h3 className="fr-quiz-variants__title">{questions[currentQuestion].question}</h3>
+              <h3 className="fr-quiz-variants__title">{quiz[currentQuestion].question}</h3>
             </UiHeading>
-            <p>Question {currentQuestion + 1} out of {questions.length}</p>
+            <p>Question {currentQuestion + 1} out of {quiz.length}</p>
 
             <div className="fr-quiz-variants__list">
               {variantListTmp}

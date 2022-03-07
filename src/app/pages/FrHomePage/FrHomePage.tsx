@@ -27,10 +27,6 @@ export function FrHomePage() {
       <div className="fr-home-page__body">
         <h1 className="fr-home-page__title">{HOME.title}</h1>
         <p>{HOME.subtitle}</p>
-        <p>
-          <UiLink text={HOME.poweredBy.text}
-                  link={HOME.poweredBy.link}/>
-        </p>
         <div className="fr-home-page__actions">
           <UiButton onClickCb={redirectTopics}
                     color={BUTTON_TYPE.promoAccent}

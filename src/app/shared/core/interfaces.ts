@@ -13,6 +13,11 @@ export interface QuizListItem {
   variants: TagListItem[],
 }
 
+export interface QuestionsListItem {
+  question: string,
+  answer: string,
+}
+
 export interface TopicListItem {
   id: string,
   img: string,
@@ -22,7 +27,8 @@ export interface TopicListItem {
   resources: ResourceListItem[],
   type: string,
   keys: string[],
-  questions?: QuizListItem[],
+  quiz?: QuizListItem[],
+  questions?: QuestionsListItem[],
 }
 
 export interface LinkListItem {

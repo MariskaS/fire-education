@@ -9,10 +9,18 @@ export const HEADING_TYPE = {
   subtitle: 'subtitle',
 };
 
+export const TOPIC_TYPE = {
+  quiz: 'quiz',
+  topic: 'topic',
+  flashcards: 'flashcards',
+};
+
 export const TITLE = {
   topics: 'topics',
   WCFD: 'WCFD',
   answers: 'Answers',
+  answer: 'answer',
+  question: 'question',
 }
 
 export const SOCIAL = {
@@ -40,10 +48,6 @@ export const BUTTON_LINK = {
 export const HOME = {
   title: 'Ready to become a firefighter?',
   subtitle: 'This application contains information for the firefighter apprentice to help improve skills.',
-  poweredBy: {
-    text: 'Powered by members of the First West Chester Fire Company No. 1 Station 51',
-    link: 'https://firstwestchester.org/',
-  },
   social: {
     title: 'Find us on social media',
     links: [
@@ -77,4 +81,8 @@ export const COMPANY_INFO = {
   link: 'https://firstwestchester.org/',
   email: 'info@firstwestchester.org',
   address: 'First West Chester Fire Company 70 South Bradford Avenue West Chester, PA 19382',
+  poweredBy: {
+    text: 'Powered by members of the First West Chester Fire Company No. 1 Station 51',
+    link: 'https://firstwestchester.org/',
+  },
 }
