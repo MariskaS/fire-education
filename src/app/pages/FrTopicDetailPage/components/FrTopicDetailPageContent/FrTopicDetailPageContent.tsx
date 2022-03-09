@@ -33,7 +33,7 @@ export const FrTopicDetailPageContent: React.FC<FrTopicDetailPageContentProps> =
       }
 
       {topic.type === TOPIC_TYPE.topic &&
-      <FrTopic/>
+      <FrTopic content={topic?.content}/>
       }
 
       {topic.type === TOPIC_TYPE.flashcards &&

@@ -1,3 +1,44 @@
+@import "src/app/styles/mixins/mixin-heading";
+
 .fr-topic {
   margin-top: calc(Var(--ui-space-base)*3);
+
+  h3 {
+    @include heading('h3');
+    line-height: 1.2;
+    margin-bottom: var(--ui-space-base);
+
+    &:not(:first-child) {
+      margin-top: var(--ui-space-base-double);
+    }
+  }
+
+  ol {
+    margin-bottom: var(--ui-space-base);
+    li {
+      padding: var(--ui-space-base);
+      display: flex;
+
+      strong {
+        padding-right: var(--ui-space-base);
+      }
+
+      &:nth-child(odd) {
+        background-color: var(--ui-color-grey-dark);
+      }
+    }
+  }
+
+  blockquote {
+    padding: var(--ui-space-base-double) 0 0;
+    margin: var(--ui-space-base-double) 0 0;
+    position: relative;
+    background-image: var(--ui-ribbon-bg);
+
+    div {
+      background-color: var(--ui-color-yellow);
+      color: var(--ui-color-grey-darker);
+      padding: var(--ui-space-base);
+    }
+  }
 }
