@@ -2,12 +2,7 @@
   padding: var(--ui-space-base-double) 0 0;
   margin-top: var(--ui-space-base-double);
   position: relative;
-  background-image: repeating-linear-gradient(
-                  -55deg,
-                  var(--ui-color-black),
-                  var(--ui-color-black) 20px,
-                  var(--ui-color-yellow) 20px,
-                  var(--ui-color-yellow) 40px);
+  background-image: var(--ui-ribbon-bg);
 
   &__title {
     font-family: var(--ui-font-family-impact);

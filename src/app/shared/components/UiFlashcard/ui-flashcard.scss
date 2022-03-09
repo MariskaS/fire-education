@@ -5,13 +5,18 @@
 
   &__header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    margin-bottom: var(--ui-space-base);
   }
 
   &__title {
-    padding-bottom: var(--ui-space-base);
     text-transform: capitalize;
     font-family: var(--ui-font-family-poppins-semi-bold);
+  }
+
+  &__icon {
+    font-size: var(--ui-font-size-icon-base);
   }
 }
 
@@ -21,8 +26,13 @@
     left: 0;
     top: 0;
     z-index: var(--ui-z-index-focus);
-    background-color: var(--ui-color-primary-dark);
     color: var(--ui-color-grey-darker);
     box-shadow: var(--ui-shadow-container);
+    background-image: var(--ui-ribbon-bg);
+
+    &__body {
+      background-color: var(--ui-color-primary-dark);
+      padding: var(--ui-space-base);
+    }
   }
 }

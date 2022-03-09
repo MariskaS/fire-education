@@ -5,6 +5,8 @@
   --ui-color-yellow: #e3a71e;
   --ui-color-yellow-dark: #cf991c;
   --ui-color-yellow-darker: #3d2e0a;
+
+  --ui-ribbon-bg: repeating-linear-gradient(-55deg, var(--ui-color-black), var(--ui-color-black) 20px, var(--ui-color-yellow) 20px, var(--ui-color-yellow) 40px);
 }
 
 [data-theme='dark'] {
