@@ -7,10 +7,13 @@ export const TOPIC_LIST = [
     id: '1',
     img: firefighterEntranceExam,
     name: 'Quiz: Could You Pass a Firefighter Entrance Exam?',
-    description: `So you want to be a firefighter. Well, there's a lot to learn first.
+    description: `
+    <p>
+    So you want to be a firefighter. Well, there's a lot to learn first.
     For example, is it considered arson if the property a person burns
     is his or her own? And what should you do if you arrive at a call
-    and find out that it was a false alarm?`,
+    and find out that it was a false alarm?
+    </p>`,
     date: '2022-02-21T22:45:34.124Z',
     type: 'quiz',
     keys: ['Entrance Exam', 'quiz'],
@@ -151,8 +154,24 @@ export const TOPIC_LIST = [
     id: '2',
     img: lossControl,
     name: 'Flashcards: Loss control',
-    description: `The purpose of this procedure is to describe the process to reduce,
-     and in many cases eliminate, certain losses experienced during and following fires and other types of incidents.`,
+    description: `
+    <p>Loss control is an important component of fire department service delivery with the philosophy of minimizing secondary damage
+    to structures and their contents during and after fire control operations.</p>
+    `,
+    notes: `
+    <ul>
+    <li>Salvage and overhaul operations are two of the most effective means of loss control.</li>
+    <li>
+    It is very important for fire personnel to identify and protect valuable contents
+    in structures affected by fire as well as searching for hidden fires so
+    rekindling does not occur.
+    </li>
+    <li>
+    Taking a customer-service oriented approach to loss control ensures that citizens’ property is adequately protected
+    and that the reputation of the fire service is held in the highest regard.
+    </li>
+    </ul>
+    `,
     date: '2022-02-21T22:45:34.124Z',
     type: 'flashcards',
     keys: ['loss control', 'flashcards'],
@@ -167,7 +186,7 @@ export const TOPIC_LIST = [
         question: 'How does the philosophy of loss control impact fire suppression?',
         answer: `
         <p><strong>Loss Control</strong> - Practice of minimizing damage and providing customer service through effective mitigation and recovery efforts before, during, and after an incident.</p>
-        <strong>Properly applied loss control activities include:</strong>
+        <h5>Properly applied loss control activities include:</h5>
         <ul>
           <li>
             Minimizing damage to the structure, exposures, and contents.
@@ -197,7 +216,7 @@ export const TOPIC_LIST = [
         Some businesses never recover from a fire due to the loss of such critical items,
          even if they are fully insured.</p>
         <p>Effective loss control depends on good planning.</p>
-        <strong>Loss control concerns that should be identified during a preincident plan include:</strong>
+        <h5>Loss control concerns that should be identified during a preincident plan include:</h5>
         <ul>
           <li>
             The most effective and least destructive means of gaining access to the structure (lockboxes, etc.).
@@ -227,7 +246,7 @@ export const TOPIC_LIST = [
         The IC should make any decisions about delaying fire suppression affer taking into consideration
         the preincident plan, fire development, and any unsafe structural conditions.
         </p>
-        <strong>The choice of salvage procedures will depend on:</strong>
+        <h5>The choice of salvage procedures will depend on:</h5>
         <ul>
         <li>Number of personnel available.</li>
         <li>Extent and location of the fire.</li>
@@ -239,6 +258,11 @@ export const TOPIC_LIST = [
       {
         question: 'What are the different types of salvage covers commonly used in the fire service?',
         answer: `
+          <ul>
+          <li>Canvas.</li>
+          <li>Vinyl.</li>
+          <li>Disposable heavy-duty plastic.</li>
+          </ul>
           <p>Salvage covers are made of <strong>waterproof canvas or vinyl</strong> and are manufactured in various sizes. These covers have reinforced corners and edge hems into which grommets are placed for hanging or draping. Vinyl synthetic covers are lightweight,
           easy to handle, economical, and practical for both indoor and outdoor use.</p>
           <p>Many departments use disposable <strong>heavy-duty plastic</strong> covers. The plastic is available on rolls and can be extended as needed to cover large areas. Covers can also be cut from the rolls
@@ -247,53 +271,149 @@ export const TOPIC_LIST = [
       },
       {
         question: 'Why is it necessary to know several ways to fold, roil, spread, and improvise with salvage covers?',
-        answer: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo quibusdam quo saepe sint vero. Adipisci distinctio dolorem expedita illo illum in l
-            audantium nisi praesentium quo repellendus`
+        answer: `
+        <p>Improvised salvage covers catch and route water away from a location.</p>
+        <h5>There are several different methods for folding/rolling and spreading covers:</h5>
+        <ul>
+        <li>One-Firefighter Spread with a Rolled Salvage Cover.</li>
+        <li>One-Firefighter Spread with a Folded Cover.</li>
+        <li>Two-Firefighter Spread with a Folded Cover.</li>
+        </ul>
+        `
+      },
+      {
+        question: 'Salvage procedures include',
+        answer: `
+        <ul>
+        <li>Moving contents to a safe location in the structure.</li>
+        <li>Removing contents from the structure.</li>
+        <li>Protecting the contents in place with salvage covers.</li>
+        </ul>
+        `
+      },
+      {
+        question: 'The are two types of damage it is important to know about',
+        answer: `
+        <ul>
+        <li>Primary - caused by fire, smoke.</li>
+        <li>Secondary - results from fire suppression.</li>
+        </ul>
+        `
+      },
+      {
+        question: 'Two tactics firefighters use are intended to reduce property damage.',
+        answer: `
+        <ul>
+        <li>Salvage - Aid in reducing primary and secondary damage.</li>
+        <li>Overhaul - searching for and extinguishing hidden or remaining fires after
+        main body extinguished.</li>
+        </ul>
+        `
+      },
+      {
+        question: 'A variety of tools and equipment are used during overhaul',
+        answer: `
+        <ul>
+        <li>Pike poles, hooks - open ceilings to inspect for fire extension.</li>
+        <li>Axe - open walls and floors.</li>
+        <li>Prying tools - remove door frames, window frames, and baseboards.</li>
+        <li>Power saws, drills, screwdrivers - install temporary doors and window coverings.</li>
+        <li>Carryalls, buckets, tubs - carry debris or provide a basin for immersing smoldering material.</li>
+        <li>Shovels, bale hooks, and pitchforks - move baled and loose materials.</li>
+        <li>Thermal imager - check void spaces and look for hot spots.</li>
+        </ul>
+        `
       },
       {
         question: 'What ways can firefighters cover openings during salvage operations?',
-        answer: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo quibusdam quo saepe sint vero. Adipisci distinctio dolorem expedita illo illum in l
-            audantium nisi praesentium quo repellendus`
+        answer: `
+        <p>Covering openings is critical to prevent further damage to the property.
+        It includes Covering doors or windows, openings in roof, openings in upper-story floors, basements, crawl spaces.</p>
+        `
       },
       {
         question: 'What methods can be used to maintain fire safety during overhaul operations?',
-        answer: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo quibusdam quo saepe sint vero. Adipisci distinctio dolorem expedita illo illum in l
-            audantium nisi praesentium quo repellendus`
+        answer: `
+        <ul>
+        <li>Inspecting the premises.</li>
+        <li>Developing an operational plan.</li>
+        <li>Providing needed tools and equipment.</li>
+        <li>Eliminating or mitigating hazards (including securing any remaining utilities).</li>
+        <li>Monitoring the atmosphere for carbon monoxide (CO) and hydrogen cyanide(HCN).
+        levels before removing SCBA</li>
+</ul>
+        `
       },
       {
         question: 'How can a firefighter describe the factors that influence locating hidden fires?',
-        answer: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo quibusdam quo saepe sint vero. Adipisci distinctio dolorem expedita illo illum in l
-            audantium nisi praesentium quo repellendus`
+        answer: `
+          <h5>There are four methods to use when locating hidden fires:</h5>
+          <ul>
+          <li>Sight - discoloration of materials, peeling paint, smoke emissions from cracks,
+           cracked plaster, rippled wallpaper and burned areas.</li>
+          <li>Touch - heat felt through walls and floors.</li>
+          <li>Sound - popping or cracking of fire burning and hissing of steam.</li>
+          <li>Electronic Sensors - thermal(heat) signature detection with thermal imager and infrared heat detection.</li>
+          </ul>
+          <p>The structural condition of an area must be evaluated before searching for hidden fires!</p>
+        `
       },
       {
         question: 'What are some of the overhaul procedures used in the fire service?',
-        answer: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo quibusdam quo saepe sint vero. Adipisci distinctio dolorem expedita illo illum in l
-            audantium nisi praesentium quo repellendus`
+        answer: `
+        <p>Overhaul procedures should begin as soon as possible after the order is given.</p>
+        <ul>
+        <li>If the fire extended to other areas, determine the path.</li>
+        <li>If floor beams have burned at party wall ends, overhaul the ends by flushing the voids
+        in the wall with water.</li>
+        <li>Thoroughly check insulation materials because they can
+        retain hidden fires for a prolonged period.</li>
+        <li>Do not make random openings.</li>
+        <li>Understanding basic building construction can help.</li>
+        <li>Search in concealed spaces.</li>
+        <li>Make openings in neat, planned manner.</li>
+        <li>Open ceilings from below.</li>
+        <li>When pulling any ceiling, do not stand directly under the area to be opened.</li>
+        <li>Always wear full PPE including respiratory protection when pulling ceilings.</li>
+        <li>Small burning objects frequently uncovered.</li>
+        <li>Large smoldering items such as mattresses etc. should be taken outside the structure where they
+        can be thoroughly extinguished.</li>
+        <li>Do not disturb evidence, work in close coordination with the fire investigator.</li>
+        <li>The use of wetting agents such as Class A foam is of considerable value when extinguishing hidden fires..</li>
+        <li>The only way to ensure that fires in bales of items such as rags, cotton, and hay are extinguished
+        is to break them apart.</li>
+</ul>
+        `
       },
       {
         question: 'How can using thermal imager be useful during overhaul?',
-        answer: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo quibusdam quo saepe sint vero. Adipisci distinctio dolorem expedita illo illum in l
-            audantium nisi praesentium quo repellendus`
+        answer: `
+        <p>Firefighters can use TIs to find hidden fires in concealed spaces such a floors,
+         ceilings, and walls without having to open up the areas and visually inspect them. This
+         reduces the time needed to perform a search and limits the secondary
+         damage to the structure</p>
+        <p>Thermal imagers must not replace your senses!</p>
+        `
       },
     ]
   },
-  // {
-  //   id: '3',
-  //   img: stub,
-  //   name: 'How much do you know about vertical ventilation?',
-  //   description: `Test your knowledge of sounding and walking on the roof,
-  //   using roof ladders, working from an aerial, and cutting the hole
-  //   and punching through`,
-  //   date: '2022-02-21T22:45:34.124Z',
-  //   type: 'topic',
-  //   keys: ['vertical ventilation', 'quiz'],
-  //   resources: [
-  //     {
-  //       name: 'firerescue1.com',
-  //       link: 'https://www.firerescue1.com/firefighter-safety/articles/quiz-how-much-do-you-know-about-vertical-ventilation-PRl0bUFhhk5aS8GN/'
-  //     }
-  //   ],
-  // },
+  {
+    id: '3',
+    img: stub,
+    name: 'How much do you know about vertical ventilation?',
+    description: `Test your knowledge of sounding and walking on the roof,
+    using roof ladders, working from an aerial, and cutting the hole
+    and punching through`,
+    date: '2022-02-21T22:45:34.124Z',
+    type: 'topic',
+    keys: ['vertical ventilation', 'quiz'],
+    resources: [
+      {
+        name: 'firerescue1.com',
+        link: 'https://www.firerescue1.com/firefighter-safety/articles/quiz-how-much-do-you-know-about-vertical-ventilation-PRl0bUFhhk5aS8GN/'
+      }
+    ],
+  },
   // {
   //   id: '4',
   //   img: stub,

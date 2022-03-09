@@ -13,10 +13,18 @@
       width: 100%;
       display: flex;
       cursor: pointer;
+      font-size: var(--ui-font-size-sm);
+      position: relative;
 
       // For Tablet.
       @media (min-width: $screen-md) {
         width: calc(100% * 1 / 2);
+      }
+
+      h5 {
+        font-family: var(--ui-font-family-poppins-semi-bold);
+        margin-bottom: var(--ui-space-base-half);
+        font-size: var(--ui-font-size-sm);
       }
 
       ul {

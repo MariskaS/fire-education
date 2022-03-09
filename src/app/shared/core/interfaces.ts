@@ -24,6 +24,7 @@ export interface TopicListItem {
   name: string,
   date: string,
   description: string,
+  notes?: string,
   resources: ResourceListItem[],
   type: string,
   keys: string[],

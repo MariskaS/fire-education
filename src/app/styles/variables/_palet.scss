@@ -2,12 +2,15 @@
 [data-theme='light'] {
   --ui-color-white: #fff;
   --ui-color-black: #000000;
+  --ui-color-yellow: #e3a71e;
+  --ui-color-yellow-dark: #cf991c;
+  --ui-color-yellow-darker: #3d2e0a;
 }
 
 [data-theme='dark'] {
-  --ui-color-primary:  #9f8524;
-  --ui-color-primary-dark:  #7e691e;
-  --ui-color-primary-darker:  #2e270b;
+  --ui-color-primary:  var(--ui-color-yellow);
+  --ui-color-primary-dark:  var(--ui-color-yellow);
+  --ui-color-primary-darker:  var(--ui-color-yellow-darker);
 
   --ui-color-accent:  #cc0000;
   --ui-color-accent-dark:  #9d0000;

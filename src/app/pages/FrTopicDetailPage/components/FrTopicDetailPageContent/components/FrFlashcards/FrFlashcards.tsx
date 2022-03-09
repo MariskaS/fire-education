@@ -16,7 +16,7 @@ export const FrFlashcards: React.FC<FrFlashcardsProps> = ({questions}) => {
 
   const handleOnChange = (index: number): void => {
     const updatedCheckedState = checkedState.map((item, idx) =>
-      idx === index ? !item : item
+      idx === index ? !item : false
     );
 
     setCheckedState(updatedCheckedState);
@@ -26,7 +26,8 @@ export const FrFlashcards: React.FC<FrFlashcardsProps> = ({questions}) => {
     <div className={`fr-flashcards__list-item ${checkedState[index] ? 'is-active' : ''}`}
          onClick={() => handleOnChange(index)}
          key={index}>
-      <UiFlashcard title={`${index + 1}. ${checkedState[index] ? TITLE.answer : TITLE.question}`}>
+      <UiFlashcard active={checkedState[index]}
+                   title={`${index + 1}. ${checkedState[index] ? TITLE.answer : TITLE.question}`}>
         {
           checkedState[index] ? (
             <div dangerouslySetInnerHTML={{__html: item.answer}}/>

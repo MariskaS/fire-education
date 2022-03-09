@@ -4,7 +4,8 @@
   padding-bottom: var(--ui-space-base);
 
   &--title {
-    @include heading('h1')
+    @include heading('h1');
+    margin-bottom: var(--ui-space-base-half);
   }
   &--subtitle {
     @include heading('h3')

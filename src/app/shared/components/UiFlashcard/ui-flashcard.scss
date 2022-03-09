@@ -3,6 +3,11 @@
   background-color: var(--ui-card-color);
   padding: var(--ui-space-base);
 
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__title {
     padding-bottom: var(--ui-space-base);
     text-transform: capitalize;
@@ -12,6 +17,12 @@
 
 .is-active {
   .ui-flashcard {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: var(--ui-z-index-focus);
     background-color: var(--ui-color-primary-dark);
+    color: var(--ui-color-grey-darker);
+    box-shadow: var(--ui-shadow-container);
   }
 }

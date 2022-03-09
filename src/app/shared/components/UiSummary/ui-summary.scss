@@ -1,0 +1,37 @@
+.ui-summary {
+  padding: var(--ui-space-base-double) 0 0;
+  margin-top: var(--ui-space-base-double);
+  position: relative;
+  background-image: repeating-linear-gradient(
+                  -55deg,
+                  var(--ui-color-black),
+                  var(--ui-color-black) 20px,
+                  var(--ui-color-yellow) 20px,
+                  var(--ui-color-yellow) 40px);
+
+  &__title {
+    font-family: var(--ui-font-family-impact);
+    font-size: var(--ui-font-size-h3);
+    padding-bottom: var(--ui-space-base-half);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+
+  &__body {
+    background-color: var(--ui-color-yellow);
+    color: var(--ui-color-grey-darker);
+    padding: var(--ui-space-base-half) var(--ui-space-base) var(--ui-space-base);
+  }
+
+  ul {
+    padding-left: 20px;
+
+    li {
+      list-style: disc;
+
+      &:not(:last-child) {
+        padding-bottom: var(--ui-space-base-half);
+      }
+    }
+  }
+}

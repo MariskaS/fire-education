@@ -7,6 +7,7 @@ import {FrQuiz} from "./components/FrQuiz/FrQuiz";
 import {TOPIC_TYPE} from "../../../../shared/core/constant";
 import {FrTopic} from "./components/FrTopic/FrTopic";
 import {FrFlashcards} from "./components/FrFlashcards/FrFlashcards";
+import {UiSummary} from "../../../../shared/components/UiSummary/UiSummary";
 
 export interface FrTopicDetailPageContentProps {
   topic: TopicListItem;
@@ -24,7 +25,7 @@ export const FrTopicDetailPageContent: React.FC<FrTopicDetailPageContentProps> =
                 title={topic.name}
                 date={topic.date}>
         <p>Resources: {resourceList}</p>
-        <p>{topic.description}</p>
+        <div dangerouslySetInnerHTML={{__html: topic.description}}/>
         <UiKeyList list={topic.keys}/>
       </UiBanner>
       {topic.type === TOPIC_TYPE.quiz &&
@@ -38,6 +39,7 @@ export const FrTopicDetailPageContent: React.FC<FrTopicDetailPageContentProps> =
       {topic.type === TOPIC_TYPE.flashcards &&
       <FrFlashcards questions={(topic.questions as QuestionsListItem[])}/>
       }
+      {topic.notes && <UiSummary><div dangerouslySetInnerHTML={{__html: topic.notes}}/></UiSummary>}
     </>
   );
 }

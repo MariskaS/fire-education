@@ -20,6 +20,7 @@ export const TITLE = {
   WCFD: 'WCFD',
   answers: 'Answers',
   answer: 'answer',
+  summary: 'summary',
   question: 'question',
 }
 
