@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import './fr-flashcards.scss';
 import {QuestionsListItem} from "../../../../../../shared/core/interfaces";
 import {TITLE} from "../../../../../../shared/core/constant";
+import {UiFlashcard} from "../../../../../../shared/components/UiFlashcard/UiFlashcard";
 
 export interface FrFlashcardsProps {
   questions: QuestionsListItem[],
@@ -25,14 +26,15 @@ export const FrFlashcards: React.FC<FrFlashcardsProps> = ({questions}) => {
     <div className={`fr-flashcards__list-item ${checkedState[index] ? 'is-active' : ''}`}
          onClick={() => handleOnChange(index)}
          key={index}>
-      <h4>{index + 1}.&nbsp;{checkedState[index] ? TITLE.answer : TITLE.question}</h4>
-      {
-        checkedState[index] ? (
-          <p>{item.answer}</p>
-        ) : (
-          <p>{item.question}</p>
-        )
-      }
+      <UiFlashcard title={`${index + 1}. ${checkedState[index] ? TITLE.answer : TITLE.question}`}>
+        {
+          checkedState[index] ? (
+            <div dangerouslySetInnerHTML={{__html: item.answer}}/>
+          ) : (
+            <div dangerouslySetInnerHTML={{__html: item.question}}/>
+          )
+        }
+      </UiFlashcard>
     </div>
   );
 

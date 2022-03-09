@@ -1,3 +1,4 @@
+@import 'src/app/styles/variables/screen';
 @import "src/app/styles/mixins/mixin-heading";
 
 $soc-icon-size: 40px;
@@ -8,11 +9,16 @@ $soc-icon-size: 40px;
   background-repeat: no-repeat;
   background-position: top center;
   background-image: url(../../styles/img/home.jpg);
-  margin: calc(var(--ui-space-base-double) * -1);
+  margin: calc(var(--ui-space-base) * -1);
   padding: var(--ui-space-base);
   display: flex;
   align-items: center;
   justify-content: center;
+
+  // For Tablet & Desktop.
+  @media (min-width: $screen-md) {
+    margin: calc(var(--ui-space-base-double) * -1);
+  }
 
   &__title {
     @include heading('h1');

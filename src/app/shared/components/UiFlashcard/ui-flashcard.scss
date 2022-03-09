@@ -1,0 +1,17 @@
+.ui-flashcard {
+  width: 100%;
+  background-color: var(--ui-card-color);
+  padding: var(--ui-space-base);
+
+  &__title {
+    padding-bottom: var(--ui-space-base);
+    text-transform: capitalize;
+    font-family: var(--ui-font-family-poppins-semi-bold);
+  }
+}
+
+.is-active {
+  .ui-flashcard {
+    background-color: var(--ui-color-primary-dark);
+  }
+}
