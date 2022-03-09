@@ -29,6 +29,10 @@
     }
   }
 
+  img {
+    max-width: 1000px;
+  }
+
   blockquote {
     padding: var(--ui-space-base-double) 0 0;
     margin: var(--ui-space-base-double) 0 0;
