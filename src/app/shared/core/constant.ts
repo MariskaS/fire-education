@@ -39,7 +39,8 @@ export const BUTTON_TEXT = {
   letsGo: 'Let\'s Go',
   volunteer: 'Volunteer',
   tryAgain: 'try again',
-  topics: 'Topics',
+  topics: 'Go Topics Page',
+  home: 'Go Home Page',
 }
 
 export const BUTTON_LINK = {
@@ -69,6 +70,7 @@ export const HOME = {
 export const ERROR = {
   oops: 'Ooops...',
   somethingWentWrong: 'Something went wrong',
+  technicalWork: 'Technical work in progress, please try again later.',
 }
 
 export const THEME = {

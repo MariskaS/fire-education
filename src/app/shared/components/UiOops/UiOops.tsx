@@ -7,17 +7,19 @@ import {Link} from "react-router-dom";
 import {LinkListItem} from "../../core/interfaces";
 
 export interface UiOopsProps {
-  to: LinkListItem;
+  to?: LinkListItem;
+  globalError?: boolean;
 }
 
-export const UiOops: React.FC<UiOopsProps> = ({to}) => {
+export const UiOops: React.FC<UiOopsProps> = ({to = undefined, globalError = false}) => {
   return (
     <div className="ui-oops">
       <div className="ui-oops__body">
         <UiHeading type={HEADING_TYPE.title}>{ERROR.oops}</UiHeading>
         <p>
           {ERROR.somethingWentWrong}.&nbsp;
-          <Link className="ui-oops__link" to={to.link}><span>{to.text}</span></Link>
+          {to && <Link className="ui-oops__link" to={to.link}><span>{to.text}</span></Link>}
+          {globalError && <p>{ERROR.technicalWork}</p>}
         </p>
       </div>
     </div>
