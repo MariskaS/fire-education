@@ -1,23 +1,27 @@
 @import "../../../styles/variables/screen";
 
-$img-width: 600px;
+$img-size: 400px;
 
 .ui-banner {
-  margin: calc(var(--ui-space-base)*-1);
+  &__img {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-width: 50%;
+    min-height: $img-size;
+  }
 
-  &__img,
   &__info {
-    padding: var(--ui-space-base);
+    padding: var(--ui-space-base-double) 0 0 0;
   }
 
   // For Tablet & Desktop.
   @media (min-width: $screen-lg) {
     & {
       display: flex;
-      align-items: center;
 
-      &__img {
-        max-width: $img-width;
+      &__info {
+        padding: 0 0 0 var(--ui-space-base-double);
       }
     }
   }

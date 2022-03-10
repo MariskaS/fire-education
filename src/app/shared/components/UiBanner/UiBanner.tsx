@@ -14,8 +14,8 @@ export interface UiBannerProps {
 export const UiBanner: React.FC<UiBannerProps> = ({img,title, date, children}) => {
   return (
     <div className="ui-banner">
-      <div className="ui-banner__img">
-        <img src={img}/>
+      <div className="ui-banner__img"
+           style={{backgroundImage: `url(${img})`}}>
       </div>
       <div className="ui-banner__info">
         <UiDate date={date}/>

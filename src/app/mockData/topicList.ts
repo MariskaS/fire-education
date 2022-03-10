@@ -446,22 +446,336 @@ wood-burning stoves, gas ovens, generators, and car exhaust fumes.</p></li>
       }
     ],
   },
-  // {
-  //   id: '4',
-  //   img: stub,
-  //   name: 'Test your knowledge of building construction',
-  //   description: 'A firefighter’s guide to building loads, forces and hazards',
-  //   date: '2022-02-21T22:45:34.124Z',
-  //   type: 'topic',
-  //   keys: ['building construction', 'quiz'],
-  //   resources: [
-  //     {
-  //       name: 'Zoo.com',
-  //       link: 'https://www.zoo.com/quiz/could-you-pass-a-firefighter-entrance-exam'
-  //     }
-  //   ],
-  //   quiz: [],
-  // },
+  {
+    id: '4',
+    img: stub,
+    name: 'Flashcards: Fire Control',
+    description: `
+    <p>Loss control is an important component of fire department service delivery with the philosophy of minimizing secondary damage
+    to structures and their contents during and after fire control operations.</p>
+    `,
+    // notes: `
+    // <ul>
+    // <li>Salvage and overhaul operations are two of the most effective means of loss control.</li>
+    // <li>
+    // It is very important for fire personnel to identify and protect valuable contents
+    // in structures affected by fire as well as searching for hidden fires so
+    // rekindling does not occur.
+    // </li>
+    // <li>
+    // Taking a customer-service oriented approach to loss control ensures that citizens’ property is adequately protected
+    // and that the reputation of the fire service is held in the highest regard.
+    // </li>
+    // </ul>
+    // `,
+    date: '2022-02-21T22:45:34.124Z',
+    type: 'flashcards',
+    keys: ['fire control', 'flashcards'],
+    resources: [
+      {
+        name: 'Essentials of Fire Fighting. Ch. 17 - FF I - Fire Control',
+        link: 'https://www.amazon.com/Essentials-Fire-Fighting-Department-Operations/dp/0133140806/ref=sr_1_2?crid=QX9BOUWPUAG7&keywords=essentials+of+firefighting&qid=1646429625&sprefix=essentials+of+fire+fighting%2Caps%2C104&sr=8-2'
+      }
+    ],
+    questions: [
+      {
+        question: 'What initial factors must be considered when suppressing fires?',
+        answer: `
+        <p>Your duties and assigned tasks will depend on your departmental standardization
+        procedures(SOPs), your assigned job on your company, the amount of fire involvement,
+        and the type of structure involved.
+        </p>
+        <ul>
+        <li>Hoseline selection.</li>
+        <li>Nozzle selection.</li>
+        <li>Making entry.</li>
+        <li>Fire attack.</li>
+        <li>Gas cooling.</li>
+        <li>Fires in upper levels of structure.</li>
+        <li>Below ground structure fires.</li>
+        <li>Exposure protection.</li>
+        <li>Controlling building utilities.</li>
+        </ul>
+`
+      },
+      {
+        question: 'What are the factors that must be considered when making entry?',
+        answer: `
+        <p>...</p>
+        <ul>
+<li>Read the fire behavior indicators.</li>
+<li>Understand the crew's tactical assignment.</li>
+<li>Identify emergency escape routes.</li>
+<li>Ensure SCBA is operating functionally.</li>
+<li>Ensure PASS is functioning.</li>
+<li>Verify radio transmission.</li>
+<li>Identify hazards.</li>
+<li>Evaluate forcible entry requirements.</li>
+        </ul>
+`
+      },
+      {
+        question: 'How do direct attack and combination attack techniques compare with one another?',
+        answer: `
+        <p>...</p>
+        <ul>
+        <li>...</li>
+        </ul>
+`
+      },
+      {
+        question: 'What are the main differences between indirect attack and gas cooling techniques?',
+        answer: `
+        <p>...</p>
+        <ul>
+        <li>...</li>
+        </ul>
+`
+      },
+      {
+        question: 'How does the presence or absence of a standpipe system impact upper level structure fires?',
+        answer: `
+        <p>...</p>
+        <ul>
+        <li>...</li>
+        </ul>
+`
+      },
+      {
+        question: 'What are the main actions that should be taken when attacking a below ground structure fire?',
+        answer: `
+        <p>...</p>
+        <ul>
+        <li>...</li>
+        </ul>
+`
+      },
+      {
+        question: 'How quickly can floor assemblies over basements reach a point of collapse?',
+        answer: `
+        <p>...</p>
+        <ul>
+        <li>...</li>
+        </ul>
+`
+      },
+      {
+        question: 'How can using exposure protection or controlling building utilities help in fire control?',
+        answer: `
+        <p>...</p>
+        <ul>
+        <li>...</li>
+        </ul>
+`
+      },
+      {
+        question: 'What are the steps that must be taken when supporting a fire protection system at a protected structure?',
+        answer: `
+        <p>...</p>
+        <ul>
+        <li>...</li>
+        </ul>
+`
+      },
+      {
+        question: 'How should a master stream device be properly deployed?',
+        answer: `
+        <p>...</p>
+        <ul>
+        <li>...</li>
+        </ul>
+`
+      },
+      {
+        question: 'How should a master stream device be properly deployed?',
+        answer: `
+        <p>...</p>
+        <ul>
+        <li>...</li>
+        </ul>
+`
+      },
+      {
+        question: 'What situations may require suppression of a class C fire?',
+        answer: `
+        <p>...</p>
+        <ul>
+        <li>...</li>
+        </ul>
+`
+      },
+      {
+        question: 'What are some safety guidelines that can be used when suppressing class C fires?',
+        answer: `
+        <p>...</p>
+        <ul>
+        <li>...</li>
+        </ul>
+`
+      },
+      {
+        question: 'How can a class D fire be suppressed?',
+        answer: `
+        <p>...</p>
+        <ul>
+        <li>...</li>
+        </ul>
+`
+      },
+      {
+        question: 'What steps should be taken when suppressing a vehicle fire?',
+        answer: `
+        <p>...</p>
+        <ul>
+        <li>...</li>
+        </ul>
+`
+      },
+      {
+        question: 'What are the factors that influence suppression' +
+          'methods in stacked and piled materials, small unattached structures, and trash containers?',
+        answer: `
+        <p>...</p>
+        <ul>
+        <li>...</li>
+        </ul>
+`
+      },
+      {
+        question: 'What are a few of the main causes of ground cover fires?',
+        answer: `
+        <p>...</p>
+        <ul>
+        <li>...</li>
+        </ul>
+`
+      },
+      {
+        question: 'How do surface fires and crown fires compare with ground fires?',
+        answer: `
+        <p>...</p>
+        <ul>
+        <li>...</li>
+        </ul>
+`
+      },
+      {
+        question: 'What three elements influence ground cover fire behavior?',
+        answer: `
+        <p>...</p>
+        <ul>
+        <li>...</li>
+        </ul>
+`
+      },
+      {
+        question: 'What are the parts of a typical ground cover fire?',
+        answer: `
+        <p>...</p>
+        <ul>
+        <li>...</li>
+        </ul>
+`
+      },
+      {
+        question: 'What types of protective clothing and equipment can be used when fighting ground cover fires?',
+        answer: `
+        <p>...</p>
+        <ul>
+        <li>...</li>
+        </ul>
+`
+      },
+      {
+        question: 'How do direct attack and indirect attack methods for ground cover fires compare with one another?',
+        answer: `
+        <p>...</p>
+        <ul>
+        <li>...</li>
+        </ul>
+`
+      },
+      {
+        question: 'What safety principles and practices should firefighters use when fighting ground cover fires?',
+        answer: `
+        <p>...</p>
+        <ul>
+        <li>...</li>
+        </ul>
+`
+      },
+      {
+        question: 'What are the priorities that must be considered when beginning fire ground operations?',
+        answer: `
+        <p>...</p>
+        <ul>
+        <li>...</li>
+        </ul>
+`
+      },
+      {
+        question: 'What are the fire ground roles a Firefighter II may need to coordinate at an accident?',
+        answer: `
+        <p>...</p>
+        <ul>
+        <li>...</li>
+        </ul>
+`
+      },
+      {
+        question: 'How should command be established at an incident?',
+        answer: `
+        <p>...</p>
+        <ul>
+        <li>...</li>
+        </ul>
+`
+      },
+      {
+        question: 'What hazards may be present at fires in underground spaces?',
+        answer: `
+        <p>...</p>
+        <ul>
+        <li>...</li>
+        </ul>
+`
+      },
+      {
+        question: 'What safety precautions should be taken at flammable/combustible liquid fire incidents?',
+        answer: `
+        <p>...</p>
+        <ul>
+        <li>...</li>
+        </ul>
+`
+      },
+      {
+        question: 'How do suppression methods for water-based and non-water based suppression systems differ?',
+        answer: `
+        <p>...</p>
+        <ul>
+        <li>...</li>
+        </ul>
+`
+      },
+      {
+        question: 'What are the ways water can be used to control Class B fires?',
+        answer: `
+        <p>...</p>
+        <ul>
+        <li>...</li>
+        </ul>
+`
+      },
+      {
+        question: 'How do suppression methods' +
+          ' for bulk transport vehicle fires and flammable gas incidents compare with one another?',
+        answer: `
+        <p>...</p>
+`
+      },
+    ]
+  },
   // {
   //   id: '5',
   //   img: stub,
