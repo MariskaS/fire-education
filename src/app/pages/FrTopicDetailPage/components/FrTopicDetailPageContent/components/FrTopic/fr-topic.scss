@@ -1,7 +1,9 @@
 @import "src/app/styles/mixins/mixin-heading";
 
+$list-width: 1000px;
+
 .fr-topic {
-  margin-top: calc(Var(--ui-space-base)*3);
+  margin-top: calc(Var(--ui-space-base) * 3);
 
   h3 {
     @include heading('h3');
@@ -15,6 +17,8 @@
 
   ol {
     margin-bottom: var(--ui-space-base);
+    max-width: $list-width;
+
     li {
       padding: var(--ui-space-base);
       display: flex;
