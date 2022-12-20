@@ -22,7 +22,7 @@ $promo-width: 160px;
     @include btn-variant(
                     transparent,
                     var(--ui-color-primary),
-                    2px solid var(--ui-color-primary),
+                    var(--ui-border-double),
                     var(--ui-color-primary-dark),
                     var(--ui-color-primary-darker),
                     var(--ui-color-primary-dark),

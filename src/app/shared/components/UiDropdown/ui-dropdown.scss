@@ -1,0 +1,39 @@
+@import '../../../styles/mixins/mixin-btn-variant';
+
+$dropdown-width: 138px;
+
+.ui-dropdown {
+  position: relative;
+  min-width: $dropdown-width;
+  font-family: var(--ui-font-family-impact);
+  font-size: var(--ui-font-size-sm);
+  z-index: calc(var(--ui-z-index-focus) + 1);
+
+  &__ico {
+    margin-left: var(--ui-space-base-half);
+  }
+
+  &__button {
+    @include btn-variant(
+                    transparent,
+                    var(--ui-color-primary),
+                    var(--ui-border-double),
+                    var(--ui-color-primary-dark),
+                    var(--ui-color-primary-darker),
+                    var(--ui-color-primary-dark),
+                    var(--ui-control-size),
+                    100%,
+                    var(--ui-space-base-half) var(--ui-space-base),
+    );
+    justify-content: space-between;
+    padding-right: var(--ui-space-base-half);
+
+    .ui-ico {
+      margin-left: var(--ui-space-base-half);
+
+      &.is-open {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

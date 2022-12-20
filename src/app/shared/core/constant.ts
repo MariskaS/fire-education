@@ -10,9 +10,10 @@ export const HEADING_TYPE = {
 };
 
 export const TOPIC_TYPE = {
+  flashcards: 'flashcards',
   quiz: 'quiz',
   topic: 'topic',
-  flashcards: 'flashcards',
+  all: 'all',
 };
 
 export const TITLE = {
@@ -34,6 +35,33 @@ export const BUTTON_TYPE = {
   promoPrimary: 'promo-primary',
   accent: 'accent',
 }
+
+export const TOPIC_LIST_DROPDOWN = [
+  {
+    id: 0,
+    title: TOPIC_TYPE.all,
+    selected: true,
+    key: TOPIC_TYPE.all
+  },
+  {
+    id: 1,
+    title: TOPIC_TYPE.topic,
+    selected: false,
+    key: TOPIC_TYPE.topic
+  },
+  {
+    id: 2,
+    title: TOPIC_TYPE.quiz,
+    selected: false,
+    key: TOPIC_TYPE.quiz
+  },
+  {
+    id: 3,
+    title: TOPIC_TYPE.flashcards,
+    selected: false,
+    key: TOPIC_TYPE.flashcards
+  },
+]
 
 export const BUTTON_TEXT = {
   letsGo: 'Let\'s Go',

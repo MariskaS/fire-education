@@ -1,11 +1,11 @@
 import {configureStore, ThunkAction, Action} from '@reduxjs/toolkit';
-import counterReducer from './counter/counterSlice';
-import topicReducer from './topic/topicSlice';
+import topicReducer from './topic/reducers';
+import searchReducer from './search/reducers';
 
 export const store = configureStore({
     reducer: {
-        counter: counterReducer,
         topic: topicReducer,
+        search: searchReducer,
     }
 })
 

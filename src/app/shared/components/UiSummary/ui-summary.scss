@@ -18,14 +18,15 @@
     padding: var(--ui-space-base-half) var(--ui-space-base) var(--ui-space-base);
   }
 
-  ul {
+  ol {
     padding-left: 20px;
 
     li {
-      list-style: disc;
+      list-style: decimal;
+      padding: var(--ui-space-base-half);
 
-      &:not(:last-child) {
-        padding-bottom: var(--ui-space-base-half);
+      &:nth-child(odd) {
+        background-color: var(--ui-color-primary-dark);
       }
     }
   }

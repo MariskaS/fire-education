@@ -37,3 +37,10 @@ export interface LinkListItem {
   text: string,
   link: string,
 }
+
+export interface DropdownListItem {
+  id: number,
+  title: string,
+  selected: boolean,
+  key: string,
+}

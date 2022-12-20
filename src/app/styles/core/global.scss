@@ -60,6 +60,7 @@ body {
     color: var(--ui-body-color);
     background-color: var(--ui-body-bg);
     padding: var(--ui-space-base);
+    box-shadow: var(--ui-shadow-container);
 
     // For Tablet & Desktop.
     @media (min-width: $screen-md) {

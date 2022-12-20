@@ -2,7 +2,6 @@ import React from 'react';
 import {useNavigate} from 'react-router-dom';
 import './fr-home-page.scss';
 import {BUTTON_TEXT, BUTTON_TYPE, HOME, SOCIAL} from "../../shared/core/constant";
-import {UiLink} from "../../shared/components/UiLink/UiLink";
 import {UiButton} from "../../shared/components/UiButton/UiButton";
 import {FaFacebookF, FaGlobe} from 'react-icons/fa';
 import {FrFooter} from "../components/FrFooter/FrFooter";

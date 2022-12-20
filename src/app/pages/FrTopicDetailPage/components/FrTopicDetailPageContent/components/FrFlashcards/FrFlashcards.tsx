@@ -27,12 +27,10 @@ export const FrFlashcards: React.FC<FrFlashcardsProps> = ({questions}) => {
          onClick={() => handleOnChange(index)}
          key={index}>
       <UiFlashcard active={checkedState[index]}
-                   title={`${index + 1}. ${checkedState[index] ? TITLE.answer : TITLE.question}`}>
+                   title={`${index + 1}. ${item.question}`}>
         {
-          checkedState[index] ? (
+          checkedState[index] && (
             <div dangerouslySetInnerHTML={{__html: item.answer}}/>
-          ) : (
-            <div dangerouslySetInnerHTML={{__html: item.question}}/>
           )
         }
       </UiFlashcard>

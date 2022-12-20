@@ -1,9 +1,9 @@
-import {createAsyncThunk, createSlice} from '@reduxjs/toolkit';
+import {createSlice} from '@reduxjs/toolkit';
 import {RootState} from '../store';
 import {TopicListItem} from '../../shared/core/interfaces';
-import {fetchTopicList} from '../../shared/core/services/topicAPI';
 import {StateStatuses} from '../../shared/core/types';
 import {STATE_STATUS} from '../../shared/core/constant';
+import {loadTopicListAsync} from "./actions";
 
 export interface TopicState {
   list: TopicListItem[];
@@ -14,14 +14,6 @@ const initialState: TopicState = {
   list: [],
   status: STATE_STATUS.idle,
 };
-
-export const loadTopicListAsync = createAsyncThunk(
-  'topic/fetchTopicList',
-  async () => {
-    const response = await fetchTopicList();
-    return response.data;
-  }
-);
 
 export const topicSlice = createSlice({
   name: 'topic',
@@ -40,6 +32,7 @@ export const topicSlice = createSlice({
   },
 });
 
-export const selectTopicList = (state: RootState) => state.topic.list;
+export const topicStateSlice = (state: RootState): TopicState => state.topic;
+
 
 export default topicSlice.reducer;

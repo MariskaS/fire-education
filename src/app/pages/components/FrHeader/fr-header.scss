@@ -8,6 +8,7 @@ $logo-size: 68px;
   background-color: var(--ui-head-bg);
   @include container();
   justify-content: space-between;
+  box-shadow: var(--ui-shadow-container);
 
   &__logo {
     cursor: pointer;

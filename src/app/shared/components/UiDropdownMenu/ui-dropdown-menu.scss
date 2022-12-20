@@ -1,0 +1,42 @@
+.ui-dropdown-menu {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  right: 0;
+  z-index: calc(var(--ui-z-index-focus) * -1);
+  background-color: var(--ui-dropdown-bg);
+  box-shadow: var(--ui-shadow-container);
+  border-width: 0 2px 2px 2px;
+  border-style: solid;
+  border-color: var(--ui-color-primary);
+
+  li {
+    padding: var(--ui-space-small) var(--ui-space-base);
+    min-height: var(--ui-control-size);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    // Fix bug for Chrome.
+    &:last-child {
+      margin-bottom: -1px;
+    }
+
+    &.is-active {
+      background-color: var(--ui-dropdown-item-active-bg);
+      color: var(--ui-dropdown-item-active-color);
+    }
+
+    &:hover,
+    &:focus {
+      &:not(.is-active) {
+        color: var(--ui-color-primary);
+      }
+    }
+
+    span {
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+}

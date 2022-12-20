@@ -1,7 +1,7 @@
 .ui-tag {
   font-size: var(--ui-font-size-xs);
   color: var(--ui-color-primary);
-  border: 2px solid var(--ui-color-primary);
+  border: var(--ui-border-double);
   padding: var(--ui-space-small) var(--ui-space-base);
   cursor: pointer;
   min-height: var(--ui-control-size-sm);

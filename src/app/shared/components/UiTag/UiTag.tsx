@@ -5,7 +5,7 @@ import {TagListItem} from "../../core/interfaces";
 
 export interface UiTagProps {
   tag: TagListItem;
-  onClickCb: (tag: TagListItem) => void,
+  onClickCb: (tag: TagListItem) => void;
 }
 
 export const UiTag: React.FC<UiTagProps> = ({tag, onClickCb}) => {
