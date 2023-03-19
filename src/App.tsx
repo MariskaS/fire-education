@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Routes} from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
 import {FrHomePage} from "./app/pages/FrHomePage/FrHomePage";
 import {FrTopicListPage} from "./app/pages/FrTopicListPage/FrTopicListPage";
 import {BUTTON_TEXT, THEME} from "./app/shared/core/constant";
