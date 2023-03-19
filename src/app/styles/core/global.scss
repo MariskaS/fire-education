@@ -78,3 +78,17 @@ p {
 strong {
   font-family: var(--ui-font-family-poppins-semi-bold);
 }
+
+.fr-dynamic-content-list {
+  list-style-type: decimal;
+  margin-left: var(--ui-space-base);
+
+  &__img {
+    width: auto;
+    min-height: 260px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: var(--ui-space-base-half);
+    border-radius: var(--ui-border-radius-base);
+  }
+}
