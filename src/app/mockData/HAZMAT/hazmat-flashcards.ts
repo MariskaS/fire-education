@@ -932,6 +932,274 @@ const HAZMAT_ANALYZING_THE_INCIDENT = [
     answer: `
         <p>They vigorously support combustion and may be explosive.</p>`
   },
+  {
+    question: '[ANALYZING THE INCIDENT] Which statement BEST describes compressed gas?',
+    answer: `Gas that, at normal temperature, exists
+     solely as a gas when pressurized in a container`,
+  },
+  {
+    question: '[ANALYZING THE INCIDENT] The concentration (in air) at which the "average person" can smell a particular compound is the:',
+    answer: `odor threshold.`,
+  },
+  {
+    question: '[ANALYZING THE INCIDENT] The concentration (in air) at which the "average person" can smell a particular compound is the:',
+    answer: `odor threshold.`,
+  },
+  {
+    question: '[ANALYZING THE INCIDENT] Materials with very little radioactivity that present no risk to the public should be shipped using what type of packaging?',
+    answer: `Excepted`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] The conversion of a liquid to vapor:`,
+    answer: `increases the material's mobility.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Which statement about oxidizers is accurate?`,
+    answer: `They vigorously support combustion and may be explosive.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Visible corrosion, or other degradation of a container, may indicate that a container is undergoing _____ energy.`,
+    answer: `Chemical.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Safety data sheets:`,
+    answer: `are often the best source of information about a particular material to which emergency responders have access.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] What placard designation is used for mixed loads where the transport vehicle contains non-bulk packages with two or more package categories of hazardous materials?`,
+    answer: `DANGEROUS`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Which is considered to be a nonbulk container?`,
+    answer: `Drum`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] What is a descriptive name, identification number, weight, or specification that includes instructions, cautions, or U.N. marks, and is required on outer packaging of hazardous materials?`,
+    answer: `Marking`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Chemical Abstract Service® (CAS®) registry numbers are unique numerical identifiers assigned to:`,
+    answer: `individual chemicals, chemical compounds, polymers, mixtures, alloys, and some biological sequences.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Once hazardous materials are detected, first responders should:`,
+    answer: `use a number of resources to identify the materials and potential hazards.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] What is the pressure exerted by a saturated vapor above its own liquid in a closed container?`,
+    answer: `Vapor pressure.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] A short-term contact or impingement is one that takes place over:`,
+    answer: `minutes or hours.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] What type of container release is characterized by a fast release of pressurized hazardous material through properly operating safety devices?`,
+    answer: `Rapid relief`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Hazardous materials or dangerous goods are:`,
+    answer: `Substances that possess harmful characteristics`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] The damaging effects of ionizing radiation occur at the _____ level.`,
+    answer: `cellular`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Which statement about radiation is accurate?`,
+    answer: `Damage if often described in terms of dosage, indicating the amount of energy absorbed by matter.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Which is NOT included on pesticide labels in the U.S. and Canada?`,
+    answer: `U.N. four-digit identification number`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] The Emergency Response Guidebook (ERG):`,
+    answer: `provides guidance to personnel who may be first to arrive at a scene of a transportation incident involving hazmat.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Breathing hazardous materials in through the nose or mouth is defined as:`,
+    answer: `Inhalation.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] A boiling liquid expanding vapor explosion (BLEVE) is caused by:`,
+    answer: `a heated liquid or gas expanding.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] In North America, the U.N.'s Transportation of Dangerous Goods - Model Regulations is the basis of:`,
+    answer: `the placarding, labeling, and marking system used to identify hazardous materials during transportation.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] In the U.S. and Canada, military markings are:`,
+    answer: `not necessarily uniform.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Which marine vessels may serve as floating warehouses with hazardous goods, vehicles, or rail cars inside?`,
+    answer: `Barges.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] A fuel that has moved beyond its upper flammable limit will:`,
+    answer: `be too rich to burn.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Class 7 placards may come in white or yellow, and they bear the unique trefoil symbol for:`,
+    answer: `Radiation.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Small airborne particles of solid substances such as grain, flour, sugar, coal, metal, or sawdust:`,
+    answer: `can ignite or explode.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Most flammable liquids will float on water because they have:`,
+    answer: `specific gravities less than one.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Locations such as ports, docks, railroad sidings, airplane hangars, and truck terminals:`,
+    answer: `are likely locations for hazmat incidents.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] What are CAMEO and WISER?`,
+    answer: `Electronic technical resources designed to help in hazmat incidents.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Liquid oxygen (LOX), nitrogen, helium, hydrogen, argon, and liquefied natural gas (LNG) are examples of:`,
+    answer: `cryogens.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Chemical Inventory Lists (CILs) at facilities usually contain information about locations of materials within a facility, making them useful tools for:`,
+    answer: `identifying containers that have been damaged or are missing labels or markings.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Flammable gases have:`,
+    answer: `no flash point.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] The lowest concentration (or lowest percentage of the substance in the air) that will produce a flash of fire when an ignition source is present is the:`,
+    answer: `LFL (lower flammable limit).`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Most hazmat incidents, such as gasoline and diesel fuel spills, involve what hazard class?`,
+    answer: `Class 3.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Most diseases are spread via contact with:`,
+    answer: `body fluids.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] In the NFPA 704 System, what does a "4" in the yellow background indicate?`,
+    answer: `Severe instability`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] A chronic exposure to a hazardous material is:`,
+    answer: `Long-term or reoccurring`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] What type of materials break down fatty skin tissues and can penetrate deeply into the body?`,
+    answer: `Bases`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] In North America, rail tank cars, portable tanks, bulk packages, and certain nonbulk packages must display:`,
+    answer: `the U.N. four-digit identification number.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] The temperature at which a liquid or volatile substance gives off enough vapors to support continuous burning is its:`,
+    answer: `fire point.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] A container making noises from expansion or contraction may indicate that the container has been exposed to _____ energy.`,
+    answer: `thermal.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Uniform classification of hazardous substances and uniform labeling standards are key elements of:`,
+    answer: `the Globally Harmonized System (GHS).`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] The reducing agent in the fire tetrahedron acts as the _____ source for the reaction.`,
+    answer: `fuel.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] NFPA 704, Standard System for the Identification of the Hazards of Materials for Emergency Response gives widely recognized methods for indicating the presence of hazardous materials:`,
+    answer: `at commercial, manufacturing,
+     institutional, or other fixed-storage facilities.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] NFPA 704, Standard System for the Identification of the Hazards of Materials for Emergency Response gives widely recognized methods for indicating the presence of hazardous materials:`,
+    answer: `at commercial, manufacturing,
+     institutional, or other fixed-storage facilities.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Statistics on marine vessel oil spills show that most oil spills:`,
+    answer: `are relatively small.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] What is a diamond shaped, color-coded sign placed on bulk transportation containers?`,
+    answer: `Placard.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] The most energetic and hazardous forms of radiation are:`,
+    answer: `ionizing.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Biohazards such as infectious substances are part of which hazardous class?`,
+    answer: `Class 6.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Which method of detecting the presence of hazardous materials would pose the least risk for a first responder?`,
+    answer: `Referring to the preincident survey of the facility.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Shipping papers must accompany:`,
+    answer: `shipments of hazardous materials.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] A chemical that burns or destroys living tissue is an example of:`,
+    answer: `corrosivity.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Which type of container breach has been documented as causing a BLEVE?`,
+    answer: `Runaway cracking. See page 217.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Under ANSI Z535.1, what color means Warning?`,
+    answer: `Orange.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Asphyxiants, irritants, convulsants, and carcinogens are types of:`,
+    answer: `Toxics.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Which statement about pipelines is MOST accurate?`,
+    answer: `Pipeline companies must provide markers where pipelines cross under (or over) railroads or waterways.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Which type of ionizing radiation consists of high-energy photons?`,
+    answer: `Gamma.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] OSHA's Hazard Communication Standard (HCS) requires:`,
+    answer: `Employers to identify hazards in the workplace.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] The Canadian Workplace Hazardous Materials Information System (WHMIS):`,
+    answer: `Is most commonly met by providing two types of labels: supplier and workplace.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] The Canadian Workplace Hazardous Materials Information System (WHMIS):`,
+    answer: `Is most commonly met by providing two types of labels: supplier and workplace.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] What type of dispersion pattern forms an irregularly shaped pattern of an airborne hazardous material where wind and/or
+     topography influence the downrange course from the point of release?`,
+    answer: `Plume. See page 220.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Which statement about solids is most accurate?`,
+    answer: `The particle size of solids may influence their behavior.`,
+  },
+  {
+    question: `[ANALYZING THE INCIDENT] Viscosity determines the ease with which a product will flow and is greatly affected by:`,
+    answer: `Temperature.`,
+  },
 ]
 
 const HAZMAT_OPERATIONS = [
