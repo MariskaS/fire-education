@@ -668,7 +668,7 @@ const HAZMAT_ANALYZING_THE_INCIDENT = [
         <p>Breach</p>`
   },
   {
-    question: `[ANALYZING THE INCIDENT] What is the term for the event in which a container is stressed beyond the limits of recovery and opens and releases its contents?`,
+    question: `[ANALYZING THE INCIDENT] Promoting common, consistent criteria for classifying chemicals according to their health, physical, and environmental hazards is the goal of:`,
     answer: `
         <p>the Globally Harmonized System (GHS)</p>`
   },
@@ -758,12 +758,7 @@ const HAZMAT_ANALYZING_THE_INCIDENT = [
         <p>toxicity</p>`
   },
   {
-    question: `[ANALYZING THE INCIDENT] In addition to burning, all flammable and combustible liquids exhibit varying degrees of:`,
-    answer: `
-        <p>Inventories, businesses, or other factors may change without notice.</p>`
-  },
-  {
-    question: `[ANALYZING THE INCIDENT] In addition to burning, all flammable and combustible liquids exhibit varying degrees of:`,
+    question: `[ANALYZING THE INCIDENT] What are some reasons that preincident surveys might not be accurate or useful in a hazmat incident?`,
     answer: `
         <p>Inventories, businesses, or other factors may change without notice.</p>`
   },
