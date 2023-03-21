@@ -1,4 +1,5 @@
-import stub from "../img/stub.jpg";
+import hazmatImg from "../img/man-hazmat-suit-with-danger-sign.jpg";
+// https://www.freepik.com/free-photos-vectors/hazmat
 
 const HAZMAT_RANDOM = [
   {
@@ -1314,7 +1315,7 @@ const HAZMAT_OPERATIONS = [
 
 export const HAZMAT_FLASHCARDS = {
   id: 'hazmatAllFlashcards',
-  img: stub,
+  img: hazmatImg,
   name: 'Flashcards: HAZMAT',
   description: `
     <p>...</p>
