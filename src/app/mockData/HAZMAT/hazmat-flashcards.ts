@@ -1223,6 +1223,33 @@ const HAZMAT_OPERATIONS = [
         <p>incident action plan</p>`
   },
   {
+    question: `[HAZMAT OPERATIONS] SIN`,
+    answer: `
+        <p>Safety, Isolate, and Notify (Awareness level)</p>`
+  },
+  {
+    question: `[HAZMAT OPERATIONS] HM Response level - defensive players - control the
+    released product through confinement measures`,
+    answer: `
+        <p>Operations.</p>`
+  },
+  {
+    question: `[HAZMAT OPERATIONS] HM Response level - offensive players - Containment(attempts
+    to stop the release and secure in the container or vessel`,
+    answer: `
+        <p>Technicians.</p>`
+  },
+  {
+    question: `[HAZMAT OPERATIONS] HM Response level - specific expertize - report to Planning`,
+    answer: `
+        <p>Specialist.</p>`
+  },
+  {
+    question: `[HAZMAT OPERATIONS] HM Response level - manages the incident`,
+    answer: `
+        <p>IC.</p>`
+  },
+  {
     question: `[HAZMAT OPERATIONS] Mission Specific Competencies`,
     answer: `
         <p>performed under written guidance or direct supervision of a HAZMAT technician or an allied professional</p>`
