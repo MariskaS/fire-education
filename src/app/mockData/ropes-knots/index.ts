@@ -1,4 +1,4 @@
-import stub from "../img/stub.jpg";
+import stub from "../img/twine-strong-white-rope.jpg";
 
 export const ROPES_KNOTS = {
   id: 'ropesKnots',

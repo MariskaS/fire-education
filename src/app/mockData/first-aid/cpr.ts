@@ -1,8 +1,8 @@
-import stub from '../img/stub.jpg';
+import cpr from '../img/cpr.jpg';
 
 export const CPR = {
   id: 'cpr',
-  img: stub,
+  img: cpr,
   name: 'Flashcards: CPR',
   date: '2022-02-21T22:45:34.124Z',
   type: 'flashcards',

@@ -1,8 +1,8 @@
-import stub from '../img/stub.jpg';
+import prevention from '../img/prevention.jpg';
 
 export const IS_700 = {
   id: 'is_700',
-  img: stub,
+  img: prevention,
   name: 'Flashcards: IS-700',
   description: `
     <p>The National Incident Management System defines

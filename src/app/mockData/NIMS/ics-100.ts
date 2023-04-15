@@ -1,11 +1,11 @@
 import nimsImg from './img/nims-scheme.png';
 import icsSructure from './img/ics-sructure.png';
 import delegatingIncidentManagementResponsibilities from './img/delegating-incident-management-responsibilities.png';
-import stub from '../img/stub.jpg';
+import prevention from '../img/prevention.jpg';
 
 export const ICS_100 = {
   id: '6',
-  img: stub,
+  img: prevention,
   name: 'Flashcards: ICS-100',
   description: `
     <p>ICS 100, Introduction to the Incident Command System, introduces the Incident Command System (ICS) and provides the foundation for higher level ICS training.`,

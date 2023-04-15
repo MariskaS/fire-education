@@ -43,8 +43,10 @@ export const UiDropdown: React.FC<UiDropdownProps> = ({list}) => {
         <span>{selectedMenuItem.title}</span>
         <FaAngleDown className="ui-dropdown__ico"/>
       </div>
-      {menuState && <UiDropdownMenu list={menuList}
-                                    onClickCb={handleMenuItemClick}/>}
+      {menuState && (
+        <UiDropdownMenu list={menuList}
+                        onClickCb={handleMenuItemClick}/>
+      )}
     </div>
   );
 }
