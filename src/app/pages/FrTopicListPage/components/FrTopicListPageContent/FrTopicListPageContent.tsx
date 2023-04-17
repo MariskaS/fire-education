@@ -20,7 +20,7 @@ export const FrTopicListPageContent: React.FC<FrTopicListPageContentProps> = ({t
   const callback = useCallback((topic) => {
     navigate(topic.id);
   }, [navigate]);
-  
+
   return (
     <>
       <UiHeading type={HEADING_TYPE.title}>

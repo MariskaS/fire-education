@@ -16,10 +16,10 @@ export const FrTopicDetailPage: React.FC = () => {
   const topic = topicList.find((v) => v.id === id);
 
   const breadcrumbs = [
-    {text: BUTTON_TEXT.topics, link: '/topics'}
+    {text: BUTTON_TEXT.back, link: '/topics'}
   ] as LinkListItem[];
 
-  const errorLink = {text: BUTTON_TEXT.topics, link: '/topics'}
+  const errorLink = {text: BUTTON_TEXT.back, link: '/topics'}
 
   if (topic) {
     return (

@@ -20,13 +20,6 @@ export const CPR = {
         <p>To protect yourself from bloodborne diseases</p>`
     },
     {
-      question: `you are hiking on a trail and come across an adult woman who appears to have trouble
-       breathing and swelling of the tongue and face.
-        What should you look for that could help you determine her possible medical condition?`,
-      answer: `
-        <p>T...</p>`
-    },
-    {
       question: `What should you do when you phone your emergency response number? (911)`,
       answer: `
         <p>Answer all the dispatcher's questions.</p>`

@@ -67,7 +67,7 @@ export const BUTTON_TEXT = {
   letsGo: 'Let\'s Go',
   volunteer: 'Volunteer',
   tryAgain: 'try again',
-  topics: 'Go Topics Page',
+  back: 'Go back',
   home: 'Go Home Page',
 }
 

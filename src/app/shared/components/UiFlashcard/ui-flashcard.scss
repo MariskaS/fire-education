@@ -24,12 +24,7 @@
 
 .is-active {
   .ui-flashcard {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: var(--ui-z-index-focus);
     color: var(--ui-color-grey-darker);
-    box-shadow: var(--ui-shadow-container);
     background-color: var(--ui-color-grey);
 
     &__content {
